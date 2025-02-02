@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <title>Cindy Wanyika</title>
+    <link rel="icon" href="octo.png">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head> 
+<body>
+<div id="header">
+<div class="container">
+    <nav>
+        <img src="logoFinal.png" class="logo">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="home-text">
+        <div class="col-1">
+            <img src="yeah.jpg">
+        </div>
+
+        <div class="col-2">
+            <h3>Hi</h3>
+
+            <h1>I'm <span>Cindy<br></span>a Backend Developer</h1>
+
+            <p>My name is Cindy Wanyika from Kenya.I am currently
+                a student at Ashesi University in Ghana majoring in Computer Science.
+                I am also a Backend and front end developer well versed<br>
+                in several programming languages
+            </p> 
+        </div>
+        
+        
+
+    </div>
+    
+</div>
+
+</div>
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="tech2.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p class="about-text">Hi! I’m Cindy, a Computer Science student with a passion for solving,<br> 
+                    real-world problems through code. Whether it’s building apps, analyzing<br>
+                     data, or designing algorithms, I love creating meaningful projects.<br>
+                      When I’m not coding, you’ll find me exploring new tech trends, blogging<br> 
+                      about social issues, or brainstorming ideas to make a difference.</p>
+                      <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                      </div>
+                      <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Programming languages</span><br>Java,Python,HTML,CSS</li>
+                            <li><span>Tools & Technologies</span><br>JavaFx,Intellij IDEA</li>
+                            <li><span>Core skills</span><br>Object Oriented Programming,Basic Cryptography</li>
+                            <li><span>Currently Learning</span><br>Data structures and Algorithms</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024</span><br>Huawei hackathon</li>
+                            <li><span>2025</span><br>Google Developers</li>
+                            <li><span>2025</span><br>some other hackathon</li>
+                        </ul>
+                      </div>
+                      <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>Alliance girls' High school</li>
+                            <li><span>2024</span><br>Ashesi University</li>
+                            <li><span>2025</span><br>CISCO</li>
+                        </ul>
+                      </div>
+                      
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!---Portfolio-->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="cab.png" style="height: 350px; width: 350px ;">
+                <div class="layer">
+                    <h3>Cab booking platform</h3>
+                    <p>The program allows connects drivers<br> and passengers within the same localities</p>
+                    <a href="#"><i class="fa fa-external-link" aria-hidden="false"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="quiz.png" style="height: 350px; width: 350px ;">
+                <div class="layer">
+                    <h3>A quiz material access Program</h3>
+                    <p>The program allows instructors to upload<br> revision materials in the form of quizes for student </p>
+                    <a href="#"><i class="fa fa-external-link" aria-hidden="false"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="journal.png" style="height: 350px; width: 350px ;">
+                <div class="layer">
+                    <h3>emotion tracking Journal</h3>
+                    <p>The program allows users to log their emotions and records them<br> enabling users to keep a track of what they feel</p>
+                    <a href="#"><i class="fa fa-external-link" aria-hidden="false"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="btn">See more</a>
+        
+    </div>
+</div>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>cindy.kilonzo@ashesi.edu.gh</p>
+                <p><i class="fas fa-phone-square"></i>
+                    +254746066852</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""></a><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" requireed>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link")
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab")
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+    
+</body>
+</html>
